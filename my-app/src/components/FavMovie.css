@@ -1,0 +1,46 @@
+.favMovies {
+  display: grid;
+  grid-template-columns: 4% 92% 4%;
+  grid-template-rows: 40% 60%;
+  height: 60vh;
+}
+
+.list {
+  display: flex;
+  grid-column: 2;
+  align-items: center;
+}
+
+.left {
+  grid-column: 1;
+  align-self: center;
+  height: 6vh;
+  width: 3vw;
+  border-radius: 50%;
+  border-color: grey;
+  border-style: solid;
+  background-color: rgba(53, 51, 51, 0.39);
+}
+.right {
+  grid-column: 3;
+  align-self: center;
+  height: 6vh;
+  width: 3vw;
+  border-color: grey;
+  border-style: solid;
+  border-radius: 50%;
+  background-color: rgba(53, 51, 51, 0.39);
+}
+
+.favMovie {
+  margin-left: 2.5vw;
+}
+
+.favMovie img {
+  /* margin-left: 1vw; */
+  height: 20vh;
+  width: 20vh;
+  border-radius: 15%;
+  border-color: rgba(255, 0, 0, 0.082);
+  border-style: solid;
+}
