@@ -20,7 +20,7 @@ const FavModal = () => {
         <button
           onClick={() => dispatch(removeFav(movie.id.attributes["im:id"]))}
         >
-          Remove From Favorite
+          -
         </button>
       </div>
       // </div>

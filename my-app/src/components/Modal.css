@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+
+.modalBackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background-color: rgba(1, 14, 14, 0.267);
+}
+
+.modal {
+  display: grid;
+  grid-template-areas: "header header";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 60% 10% 10%;
+  position: fixed;
+  top: 5vh;
+  left: 20vw;
+  border-radius: 5%;
+  width: 50vw;
+  height: 80vh;
+  z-index: 5;
+  background-color: #181818;
+}
+
+.modal img {
+  grid-row: 2;
+  width: 80%;
+  height: 80%;
+  border-radius: 15%;
+  justify-self: center;
+}
+.modal button {
+  justify-self: start;
+  align-self: start;
+  left: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.37);
+  color: rgb(245, 245, 245);
+  font-size: 60px;
+  position: relative;
+}
+
+.name {
+  font-family: Aberato;
+  grid-area: header;
+  justify-self: center;
+  align-self: center;
+  color: red;
+  font-weight: bold;
+  font-size: 40px;
+}
+.description {
+  font-family: Aberato;
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: center;
+  padding-right: 1vw;
+  /* align-self: center; */
+  color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

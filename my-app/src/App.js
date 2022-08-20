@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { MovieList } from "./components/MovieList";
 import { Header } from "./components/Header";
 import { getMovies } from "./features/movieList/movieListSlice";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { FavMovieList } from "./components/FavMovieList";
 import FavHeader from "./components/FavHeader";
 import Modal from "./components/Modal";

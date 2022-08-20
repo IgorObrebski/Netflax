@@ -2,6 +2,7 @@ import React from "react";
 import { hideModal } from "../features/modalSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { favHideModal } from "../features/favModalSlice";
+import "./Modal.css";
 
 const ModalShade = () => {
   const dispatch = useDispatch();

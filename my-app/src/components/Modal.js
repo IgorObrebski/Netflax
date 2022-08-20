@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addToFav } from "../features/movieList/movieFavListSlice";
+import "./Modal.css";
 
 const Modal = () => {
   const movie = useSelector((store) => store.modal.movie);
@@ -17,7 +18,7 @@ const Modal = () => {
         <div className='name'>{movie["im:name"].label}</div>
         <img src={image[2].label} alt='movie screen'></img>
         <div className='description'>{movie.summary.label}</div>
-        <button onClick={() => dispatch(addToFav(movie))}>AddToFav</button>
+        <button onClick={() => dispatch(addToFav(movie))}>+</button>
       </div>
       // </div>
     );
