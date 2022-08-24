@@ -5,6 +5,7 @@ import { useState } from "react";
 import { changePages, prevPage } from "../features/movieList/movieListSlice";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import "./Movie.css";
 
 export const MovieList = () => {
   const movieList = useSelector((store) => store.list.movieList);
@@ -22,29 +23,24 @@ export const MovieList = () => {
   if (movieList.length > 0) {
     return (
       <>
-        <div className='movieList'>
+        <div className='movies'>
           {currentPage >= 2 ? (
-            <button
-              onClick={() => dispatch(prevPage())}
-              className='btnMovieListPrev'
-            >
+            <button onClick={() => dispatch(prevPage())} className='leftBtn'>
               <ArrowBackIosIcon />
             </button>
           ) : null}
-
-          {currentMovie.map((movie) => (
-            <Movies
-              movie={movie}
-              image={movie["im:image"]}
-              key={movie.id.attributes["im:id"]}
-              id={movie.id.attributes["im:id"]}
-            />
-          ))}
+          <div className='list'>
+            {currentMovie.map((movie) => (
+              <Movies
+                movie={movie}
+                image={movie["im:image"]}
+                key={movie.id.attributes["im:id"]}
+                id={movie.id.attributes["im:id"]}
+              />
+            ))}
+          </div>
           {currentPage <= lastPage ? (
-            <button
-              onClick={() => dispatch(changePages())}
-              className='btnMovieListNext'
-            >
+            <button onClick={() => dispatch(changePages())} className='rightBtn'>
               <ArrowForwardIosIcon />
             </button>
           ) : null}

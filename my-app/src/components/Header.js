@@ -8,7 +8,6 @@ export const Header = () => {
       <div className='image'>
         <img src={Mol} alt='mol' className='mol'></img>
         <p>The silence of the lamb</p>
-        <button>More Information</button>
       </div>
     </div>
   );

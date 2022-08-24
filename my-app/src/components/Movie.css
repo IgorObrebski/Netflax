@@ -1,8 +1,8 @@
-.favMovies {
+.movies {
+  margin-top: 7vh;
   display: grid;
   grid-template-columns: 3% 94% 3%;
-  grid-template-rows: 40% 60%;
-  height: 60vh;
+  height: 30vh;
 }
 
 .list {
@@ -11,39 +11,35 @@
   align-items: center;
 }
 
-.left {
-  grid-column: 1;
-  align-self: center;
-  height: 15vh;
-  background-color: rgba(63, 60, 60, 0.192);
-  color: white;
-}
-
-.left:hover {
-  transition: 1s;
-  background-color: rgba(255, 255, 255, 0.37);
-  color: black;
-}
-
-.right {
-  grid-column: 3;
-  align-self: center;
-  height: 15vh;
-  background-color: rgba(63, 60, 60, 0.192);
-  color: white;
-}
-
-.right:hover {
-  transition: 1s;
-  background-color: rgba(255, 255, 255, 0.37);
-  color: black;
-}
-
-.favMovie {
+.movie {
   margin-left: 2.5vw;
 }
 
-.favMovie img {
+.leftBtn {
+  height: 15vh;
+  align-self: center;
+  background-color: rgba(63, 60, 60, 0.192);
+  color: white;
+}
+.leftBtn:hover {
+  transition: 1s;
+  background-color: rgba(255, 255, 255, 0.37);
+  color: black;
+}
+
+.rightBtn {
+  height: 15vh;
+  align-self: center;
+  background-color: rgba(63, 60, 60, 0.192);
+  color: white;
+}
+.rightBtn:hover {
+  transition: 1s;
+  background-color: rgba(255, 255, 255, 0.37);
+  color: black;
+}
+
+.movie img {
   /* margin-left: 1vw; */
   height: 20vh;
   width: 20vh;
@@ -53,7 +49,7 @@
   transition: 0.5s linear;
 }
 
-.favMovie img:hover {
+.movie img:hover {
   transition: 0.5s linear;
   height: 25vh;
   width: 25vh;

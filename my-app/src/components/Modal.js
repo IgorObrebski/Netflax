@@ -19,6 +19,10 @@ const Modal = () => {
         <img src={image[2].label} alt='movie screen'></img>
         <div className='description'>{movie.summary.label}</div>
         <button onClick={() => dispatch(addToFav(movie))}>+</button>
+        <div className='category'>
+          <p>category: {movie.category.attributes.label}</p>
+          <p>Author: {movie["im:artist"].label}</p>
+        </div>
       </div>
       // </div>
     );

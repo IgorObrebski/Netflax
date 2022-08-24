@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { removeFav } from "../features/movieList/movieFavListSlice";
+import RemoveIcon from "@mui/icons-material/Remove";
 
 const FavModal = () => {
   const movie = useSelector((store) => store.favModal.movie);
@@ -20,8 +21,12 @@ const FavModal = () => {
         <button
           onClick={() => dispatch(removeFav(movie.id.attributes["im:id"]))}
         >
-          -
+          <RemoveIcon />
         </button>
+        <div className='category'>
+          <p>category: {movie.category.attributes.label}</p>
+          <p>Author: {movie["im:artist"].label}</p>
+        </div>
       </div>
       // </div>
     );

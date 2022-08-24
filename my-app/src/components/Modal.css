@@ -51,14 +51,19 @@
   position: relative;
 }
 
+.category {
+  color: white;
+  font-size: 2vh;
+}
+
 .name {
   font-family: Aberato;
   grid-area: header;
   justify-self: center;
   align-self: center;
-  color: red;
+  color: rgb(255, 255, 255);
   font-weight: bold;
-  font-size: 40px;
+  font-size: 5vh;
 }
 .description {
   font-family: Aberato;
@@ -67,6 +72,6 @@
   justify-self: center;
   padding-right: 1vw;
   /* align-self: center; */
-  color: red;
+  color: rgb(252, 252, 252);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

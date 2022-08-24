@@ -27,7 +27,7 @@ export const FavMovieList = () => {
           <ArrowBackIosIcon />
         </button>
       ) : null}
-      <div className="list">
+      <div className='list'>
         {currentMovie.map((movie) => (
           <FavMovies
             movie={movie}
@@ -37,7 +37,7 @@ export const FavMovieList = () => {
           />
         ))}
       </div>
-      {currentMovie.length >= 7 ? (
+      {favMovieList.length >= 8 ? (
         <button onClick={() => dispatch(changePages())} className='right'>
           <ArrowForwardIosIcon />
         </button>
